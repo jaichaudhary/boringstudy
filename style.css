@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat'; 
+    background-color: #fdf6f6;
+    font-size: 16px;
+    /* height: 100vh; */
+    padding: 0px 20px ;
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: darkred; */
+}
+
+.nav-bar{
+    padding-top: 15px;
+    margin-bottom: 17%;
+}
+
+.About{
+    text-align: left;
+}
+
+.left{
+    position: relative;
+    /* margin-top: 18%; */
+    /* margin-top: 70px; */
+}
+
+.upperDropdown{
+    position: relative;
+    display: block;
+    background-color: #50B6BB;
+    color: #fdf6f6;
+    padding: 10px 21px;
+    text-align: left;
+    margin: 0px 15px;
+    border-radius: 50px;
+    font-size: 100%;
+    font-weight: 700;
+    /* text-align: center; */
+    line-height: 30px;
+    z-index: 10;
+}
+
+
+.upperDropdown span{
+    float: right;
+    line-height: 30px;
+    margin: 0px 0px;
+    font-size: 100%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+a span{
+    float: right;
+    line-height: 30px;
+    margin: 0px 0px;
+    margin-top: 3.5px;
+    font-size: 100%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Semester span{
+    margin-right: 24px;
+}
+
+.upperDropdown.active > span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+
+.optionContainer {
+    max-height: 0px;
+    /* padding-top: 50px; */
+    background-color: #388186;
+    color: #fdf6f6;
+    opacity: 0;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 25px;
+    margin: 0px 15px;
+    font-weight: 600;
+    line-height: 25px;
+    z-index: 9;
+    /* margin-bottom: 40px; */
+}
+                                         /*--------------------- dropdown -------------------------*/
+.optionContainer.active {
+    position: relative;
+    /* padding-top: 50px; */
+    max-height: 195px;
+    opacity: 1;
+    top: -50px;
+    margin-bottom: -60px;
+    /* transition: 0.1s; */
+    /* overflow-y: scroll; */
+    /* overflow: auto; */
+    overflow: hidden;
+    z-index: 9;
+}
+
+
+.optionContainer.active > .scroll{
+    position: relative;
+    max-height: 135px;
+    padding-top: 50px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    opacity: 1;
+}
+
+.ECE-Sem{
+    display: none;
+}
+.ECE-Sem.active{
+    position: relative;
+    display: block;
+    left: 15px;
+}
+
+                                       /* spanCreate */
+.ECE.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.ECE-Sem1.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.ECE-Sem2.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.ECE-Sem3.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.ECE-Sem4.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.ECE-Sem5.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.ECE-Sem6.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.ECE-Sem7.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.ECE-Sem8.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+                                           /* spanEnd */
+
+.ECE-Sem1Sub{
+    display: none;
+}
+.ECE-Sem1Sub.active{
+    position: relative;
+    display: block;
+    left:15px;
+}
+
+.ECE-Sem2Sub{
+    display: none;
+}
+.ECE-Sem2Sub.active{
+    position: relative;
+    display: block;
+    left:15px;
+}
+
+.ECE-Sem3Sub{
+    display: none;
+}
+.ECE-Sem3Sub.active{
+    position: relative;
+    display: block;
+    left:15px;
+}
+
+.ECE-Sem4Sub{
+    display: none;
+}
+.ECE-Sem4Sub.active{
+    position: relative;
+    display: block;
+    left:15px;
+}
+
+.ECE-Sem5Sub{
+    display: none;
+}
+.ECE-Sem5Sub.active{
+    position: relative;
+    display: block;
+    left:15px;
+}
+
+.ECE-Sem6Sub{
+    display: none;
+}
+.ECE-Sem6Sub.active{
+    position: relative;
+    display: block;
+    left:15px;
+}
+
+.ECE-Sem7Sub{
+    display: none;
+}
+.ECE-Sem7Sub.active{
+    position: relative;
+    display: block;
+    left:15px;
+}
+
+.ECE-Sem8Sub{
+    display: none;
+}
+.ECE-Sem8Sub.active{
+    position: relative;
+    display: block;
+    left:15px;
+}
+
+
+.Branch.invisible{
+    opacity:0;
+}
+
+.ECE-Sub{
+    display: none;
+}
+
+.ECE-Sub.active{
+    display: block;
+}
+
+/* .lowerDropdown .option:hover{
+    background: #50B6BB;
+} */
+
+/* .option{
+    padding: 5px 21px;
+}
+
+.option .radio{
+    display: none;
+} */
+
+.optionContainer.active > .scroll::-webkit-scrollbar {
+    position: absolute;
+    max-height: 90%;
+    width: 8px;
+    background: #388186;
+    margin-top: 30px;
+    /* box-sizing: border-box; */
+    /* overflow: auto; */
+    /* border-radius: 0 30px 30px 0; */
+  }
+  
+.optionContainer .scroll::-webkit-scrollbar-thumb {
+    background: #50b6bb;
+    border-radius: 5px;
+    opacity: 0;
+  }
+
+                                              /*--------------------- dropdown -------------------------*/
+
+.content{
+    /* margin-top: 10%; */
+    margin-top: 30px;
+    padding: 0px 16px;
+    max-height: 95px;
+    /* position: relative; */
+    /* opacity: 1; */
+    /* max-height: 0; */
+    overflow: hidden;
+    /* margin-bottom: 10%; */
+    /* top : -200px; */
+    /* top: 500; */
+}
+
+.content.active{
+    position: absolute;
+    opacity:0;
+    margin-top: 0%;
+    /* max-height: 0px; */
+    /* margin-top: -14%;  */
+    /* display: none; */
+    /* transition: 0.3s; */
+    z-index: 7;
+    /* padding: 0px 0px; */
+}
+
+.optionContainer.active > .scroll::-webkit-scrollbar {
+    position: absolute;
+    max-height: 90%;
+    width: 8px;
+    background: #388186;
+    margin-top: 30px;
+    /* box-sizing: border-box; */
+    /* overflow: auto; */
+    /* border-radius: 0 30px 30px 0; */
+  }
+  
+.optionContainer .scroll::-webkit-scrollbar-thumb {
+    background: #50b6bb;
+    border-radius: 5px;
+    opacity: 0;
+
+  }
+
+.content p{
+    position: relative;
+    color: rgb(36, 52, 53) !important; 
+    line-height: 25px;
+    font-weight: 500;
+    align-content: space-between;
+    /* max-height: 120px; */
+}
+
+/* .optECE{
+    max-height: 0px;
+    opacity: 0;
+} */
+
+.logo{
+    width: 180px;
+    /* width: 50%; */
+}
+
+.right{
+    margin-top: 75px;
+}
+
+.illustration{
+    width: 85%;
+}
+
+.illustration.active{
+    display: none;
+}
+
+.folderIcon > a , .folderIcon > img{
+    /* display: none; */
+    position: relative;
+    display: flex;
+    left:25%;
+}
+
+.folderIcon > a{
+    /* display: none; */
+    position: relative;
+    color:#388186;
+    left:50%;
+    margin-top: 15%;
+}
+
+.folderIcon{
+    position: relative;
+    /* background-color: aquamarine; */
+    /* height: 70%; */
+    width:90%;
+    line-height: 0px;
+    margin-top: 30px;
+}
+
+ .rightFolder{
+    display: none;
+}
+
+.rightFolder.active{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    margin-bottom: 35%;
+    width:70%;
+    left: 11%;
+} 
+
+/* .rightFolder.active .rightFolderUp{
+   display: block;
+} */
+
+.footer{
+    margin-top: 22%;
+    padding: 8px 0px;
+    font-weight: 500;
+    border-top-style:solid;
+    border-width: thin;
+    border-top-color: #388186;
+    line-height: 150%;
+}
+
+.footer a{
+    color: #388186;
+    font-weight: 600;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-left: #fdf6f6;
+}
+
+li > a{
+    margin: 0;
+    text-align: left;
+    padding: 10px 21px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    /* border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: thin;
+    border-color: #50B6BB;
+    border-style: dashed; */
+}
+
+/* li {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: dashed 1px;
+    border-color: #50B6BB;
+    border-style: solid;
+} */
+
+@media only screen and (min-width:768px){
+    body{
+        font-size: 19px;
+    }
+
+    .nav-bar{
+        margin-bottom: 11%;
+    }
+
+    .left{
+        /* margin-top: 12%; */
+        display:list-item;
+        /* justify-content: center; */
+    }
+
+    .content{
+        position: relative;
+        margin-top: 7%;
+    }
+
+    .right{
+        margin-top: 17%;
+    }
+
+    .rightFolder.active{
+        position: relative;
+        display: inline-block;
+        margin-top: -4%;
+        margin-bottom: -8%;
+        left:-15px;
+        width:23%;
+    }
+
+    .illustration{
+        width:80%
+    }
+
+    
+}
+
+@media only screen and (min-width : 1024px){
+    body{
+        padding-top: 30px;
+        padding-left: 90px;
+        padding-right: 100px;
+        font-size: 30px;
+    }
+
+    .logo{
+        width:300px;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 40% 70%;
+    }
+
+    .nav-bar{
+        text-align: left;
+        /* background-color: darkgreen; */
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding-left: 32px;
+        padding-bottom: 20px;
+    }
+
+    .left{
+        height: 100vh;
+        /* background-color: cornflowerblue; */
+        /* display: flex; */
+        padding: 0px 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dropdown{
+        margin-top: 20%;
+    }
+
+    .upperDropdown{
+        padding:35px;
+    }
+
+    .optionContainer{
+        border-radius: 50px;
+    }
+
+    .optionContainer.active{
+        max-height: 500px;
+        top: -100px;
+    }
+
+    .optionContainer.active>.scroll{
+        max-height: 280px;
+        padding-top: 100px;
+        border-style: 50px;
+    }
+
+    .content{
+        max-height:1000px;
+        text-align: left;
+    }
+
+    .content > p{
+        line-height: 60px;
+        opacity: 0.8;
+    }
+    
+    .right{
+        /* background-color: brown; */
+        height: 100vh;
+        text-align: right;
+        align-self: center;
+        justify-self:center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .right>img{
+        margin-top: 4%;
+        width: 100%;
+    }
+
+    .rightFolder.active{
+        position: relative;
+        display: inline-flex;
+        justify-content: space-between;
+        margin-top: 40%;
+        /* margin-bottom: 35%; */
+        width:150%;
+        left:-150px;
+    } 
+
+    li>a{
+        padding:35px;
+    }
+
+    .footer{
+        margin-top: -80px;
+    }
+}

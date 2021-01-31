@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="327.563" height="75.095" viewBox="0 0 327.563 75.095">
+  <g id="Brand_logo" data-name="Brand logo" transform="translate(-167 -58.905)">
+    <text id="boringStudy" transform="translate(167 121)" fill="#2e2b2b" font-size="50" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">boringStudy</tspan></text>
+    <g id="Corner_icon" data-name="Corner icon">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="10.355" height="31.066" rx="5.178" transform="matrix(0.848, 0.53, -0.53, 0.848, 485.782, 73.971)" fill="#388186"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="9.924" height="31.066" rx="4.962" transform="matrix(0.848, 0.53, -0.53, 0.848, 480.79, 58.905)" fill="#a5e9e1"/>
+    </g>
+  </g>
+</svg>
