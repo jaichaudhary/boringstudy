@@ -476,7 +476,7 @@ li > a{
     }
 
     .upperDropdown{
-        padding:35px;
+        padding:25px;
     }
 
     .optionContainer{
@@ -484,13 +484,13 @@ li > a{
     }
 
     .optionContainer.active{
-        max-height: 500px;
-        top: -100px;
+        max-height: 380px;
+        top: -80px;
     }
 
     .optionContainer.active>.scroll{
-        max-height: 280px;
-        padding-top: 100px;
+        max-height: 380px;
+        padding-top: 80px;
         border-style: 50px;
     }
 
@@ -516,7 +516,7 @@ li > a{
 
     .right>img{
         margin-top: 4%;
-        width: 100%;
+        width: 80%;
     }
 
     .rightFolder.active{
@@ -530,7 +530,7 @@ li > a{
     } 
 
     li>a{
-        padding:35px;
+        padding:25px;
     }
 
     .footer{
