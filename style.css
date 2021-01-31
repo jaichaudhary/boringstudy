@@ -438,7 +438,7 @@ li > a{
 
 @media only screen and (min-width : 1024px){
     body{
-        padding-top: 30px;
+        padding-top: 20px;
         padding-left: 85px;
         padding-right: 100px;
         font-size: 20px;
