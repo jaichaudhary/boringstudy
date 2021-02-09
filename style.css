@@ -628,8 +628,8 @@ li > a{
         justify-content: space-between;
         margin-top: 40%;
         /* margin-bottom: 35%; */
-        width:150%;
-        left:0px;
+        width:100%;
+        left:70px;
     } 
 
     li>a{
