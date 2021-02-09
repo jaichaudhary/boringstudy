@@ -626,10 +626,10 @@ li > a{
         position: relative;
         display: inline-flex;
         justify-content: space-between;
-        margin-top: 40%;
+        margin-top: 30%;
         /* margin-bottom: 35%; */
-        width:100%;
-        left:70px;
+        width:110%;
+        left:80px;
     } 
 
     li>a{
