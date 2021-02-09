@@ -22,9 +22,14 @@ body{
 }
 
 .nav-bar{
-    padding-top: 15px;
-    margin-bottom: 17%;
+    padding-top: 25px;
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: center;
 }
+/* .nav-bar p{
+    font-weight: bold;
+} */
 
 .About{
     text-align: left;
@@ -72,8 +77,11 @@ a span{
     cursor: pointer;
 }
 
+.branches span{
+    margin-right: 20px;
+}
 .Semester span{
-    margin-right: 24px;
+    margin-right: 42px;
 }
 
 .upperDropdown.active > span{
@@ -122,16 +130,45 @@ a span{
     opacity: 1;
 }
 
-.ECE-Sem{
+.IPU_Branch{
     display: none;
 }
-.ECE-Sem.active{
+.IPU_Branch.active{
+    position: relative;
+    display: block;
+    left:12px;
+}
+.BTE_Branch{
+    display: none;
+}
+.BTE_Branch.active{
+    position:relative;
+    display: block;
+    left: 12px;
+}
+
+/* .BTE{
+    display: none;
+} */
+
+.Sems{
+    display: none;
+}
+.Sems.active{
     position: relative;
     display: block;
     left: 15px;
 }
 
                                        /* spanCreate */
+.IPU.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}
+.BTE.active span{
+    transform: rotateZ(180deg);
+    transition: 0.2s;
+}                                       
 .ECE.active span{
     transform: rotateZ(180deg);
     transition: 0.2s;
@@ -255,12 +292,27 @@ a span{
     display: block;
 }
 
+/* .lowerDropdown .option:hover{
+    background: #50B6BB;
+} */
+
+/* .option{
+    padding: 5px 21px;
+}
+
+.option .radio{
+    display: none;
+} */
+
 .optionContainer.active > .scroll::-webkit-scrollbar {
     position: absolute;
     max-height: 90%;
     width: 8px;
     background: #388186;
     margin-top: 30px;
+    /* box-sizing: border-box; */
+    /* overflow: auto; */
+    /* border-radius: 0 30px 30px 0; */
   }
   
 .optionContainer .scroll::-webkit-scrollbar-thumb {
@@ -276,14 +328,25 @@ a span{
     margin-top: 30px;
     padding: 0px 16px;
     max-height: 95px;
+    /* position: relative; */
+    /* opacity: 1; */
+    /* max-height: 0; */
     overflow: hidden;
+    /* margin-bottom: 10%; */
+    /* top : -200px; */
+    /* top: 500; */
 }
 
 .content.active{
     position: absolute;
     opacity:0;
     margin-top: 0%;
+    /* max-height: 0px; */
+    /* margin-top: -14%;  */
+    /* display: none; */
+    /* transition: 0.3s; */
     z-index: 7;
+    /* padding: 0px 0px; */
 }
 
 .optionContainer.active > .scroll::-webkit-scrollbar {
@@ -292,6 +355,9 @@ a span{
     width: 8px;
     background: #388186;
     margin-top: 30px;
+    /* box-sizing: border-box; */
+    /* overflow: auto; */
+    /* border-radius: 0 30px 30px 0; */
   }
   
 .optionContainer .scroll::-webkit-scrollbar-thumb {
@@ -310,9 +376,22 @@ a span{
     /* max-height: 120px; */
 }
 
+/* .optECE{
+    max-height: 0px;
+    opacity: 0;
+} */
+
 .logo{
-    width: 160px;
-    /* width: 50%; */
+    position: relative;
+    width: 12px;
+    top: -10px;
+    left: 1px;
+    /* width: 100%; */
+}
+.logo-write{
+    /* width: 160px; */
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .right{
@@ -351,7 +430,7 @@ a span{
     margin-top: 30px;
 }
 
- .rightFolder{
+.rightFolder{
     display: none;
 }
 
@@ -364,6 +443,10 @@ a span{
     width:70%;
     left: 11%;
 } 
+
+/* .rightFolder.active .rightFolderUp{
+   display: block;
+} */
 
 .footer{
     margin-top: 22%;
@@ -394,7 +477,22 @@ li > a{
     color: white;
     display: block;
     text-decoration: none;
+    /* border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: thin;
+    border-color: #50B6BB;
+    border-style: dashed; */
 }
+
+/* li {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: dashed 1px;
+    border-color: #50B6BB;
+    border-style: solid;
+} */
 
 @media only screen and (min-width:768px){
     body{
@@ -438,14 +536,18 @@ li > a{
 
 @media only screen and (min-width : 1024px){
     body{
-        padding-top: 20px;
-        padding-left: 85px;
+        padding-top: 30px;
+        padding-left: 90px;
         padding-right: 100px;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .logo{
-        width:200px;
+        width: 25px;
+        top: -17px;
+    }
+    .logo-write{
+        font-size: 40px;
     }
     
     .container{
@@ -460,6 +562,7 @@ li > a{
         margin-bottom: 0px;
         padding-left: 32px;
         padding-bottom: 20px;
+        justify-content: left;
     }
 
     .left{
@@ -500,7 +603,7 @@ li > a{
     }
 
     .content > p{
-        line-height: 40px;
+        line-height: 60px;
         opacity: 0.8;
     }
     
@@ -516,7 +619,7 @@ li > a{
 
     .right>img{
         margin-top: 4%;
-        width: 80%;
+        width: 100%;
     }
 
     .rightFolder.active{
