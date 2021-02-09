@@ -22,7 +22,7 @@ body{
 }
 
 .nav-bar{
-    padding-top: 25px;
+    padding-top: 22px;
     margin-bottom: 20%;
     display: flex;
     justify-content: center;
@@ -539,7 +539,7 @@ li > a{
         padding-top: 30px;
         padding-left: 90px;
         padding-right: 100px;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .logo{
@@ -619,7 +619,7 @@ li > a{
 
     .right>img{
         margin-top: 4%;
-        width: 100%;
+        width: 80%;
     }
 
     .rightFolder.active{
