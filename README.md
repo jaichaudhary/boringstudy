@@ -1,1 +1,1 @@
-# boringstudy.github.io
+# jaichaudhary.github.io
