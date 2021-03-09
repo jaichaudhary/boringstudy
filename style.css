@@ -587,12 +587,12 @@ li > a{
     }
 
     .optionContainer.active{
-        max-height: 300px;
+        max-height: 260px;
         top: -70px;
     }
 
     .optionContainer.active>.scroll{
-        max-height: 300px;
+        max-height: 260px;
         padding-top: 70px;
         border-style: 50px;
     }
