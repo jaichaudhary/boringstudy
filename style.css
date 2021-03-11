@@ -626,11 +626,35 @@ li > a{
         position: relative;
         display: inline-flex;
         justify-content: space-between;
-        margin-top: 30%;
+        margin-top: 17%;
         /* margin-bottom: 35%; */
         width:110%;
         left:80px;
     } 
+    
+    .folderIcon > a , .folderIcon > img{
+    /* display: none; */
+    position: relative;
+    display: flex;
+    left:-15%;
+}
+
+.folderIcon > a{
+    /* display: none; */
+    position: relative;
+    color:#388186;
+    left:15%;
+    margin-top: 15%;
+}
+
+.folderIcon{
+    position: relative;
+    /* background-color: aquamarine; */
+    /* height: 70%; */
+    width:85%;
+    line-height: 0px;
+    margin-top: 30px;
+}
 
     li>a{
         padding:20px;
